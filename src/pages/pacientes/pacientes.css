@@ -1,0 +1,68 @@
+.wrapperPaciente {
+  flex: 4;
+}
+
+.titulo {
+  font-size: 32px;
+  padding-left: 33px;
+}
+.subtitulo {
+  font-size: 16px;
+  padding-left: 33px;
+}
+.searchForm {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.searchForm input {
+  position: relative;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.searchForm input[type="text"] {
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  width: 597px;
+  height: 56px;
+  outline: none;
+  padding: 0 45px;
+  border-radius: 25px 0px 0px 25px;
+}
+.searchForm input[type="submit"] {
+  position: relative;
+  border-radius: 0 25px 25px 0;
+  width: 97px;
+  height: 56px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgb(126, 125, 125);
+  color: rgba(255, 255, 255, 0.918);
+}
+.searchForm img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index: 999;
+  padding-top: 18px;
+  padding-left: 20px;
+}
+
+.datatable {
+  padding: 33px;
+}
+.footer {
+  background-color: rgba(241, 241, 241, 0.993);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 80px;
+  padding-left: 33px;
+}
+.logofooter {
+  padding-right: 15px;
+}

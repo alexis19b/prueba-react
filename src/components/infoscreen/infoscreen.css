@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  height: 34px;
+  width: auto;
+  background-color: rgba(207, 212, 214, 1);
+  flex-direction: column;
+}
+.texto {
+  display: flex;
+  align-items: center;
+  color: rgb(97, 95, 95);
+  padding-left: 20px;
+  font-size: 14px;
+  padding: 5px;
+}

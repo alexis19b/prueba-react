@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import InfoScreen from "./components/infoscreen/InfoScreen";
+import Sidebar from "./components/sidebar/Sidebar";
+import TopBar from "./components/topbar/TopBar";
+import "./App.css";
+import Inicio from "./pages/inicio/Inicio";
+import Pacientes from "./pages/pacientes/Pacientes";
+import NavBar from "./components/navbar/NavBar";
+import Medicos from "./pages/medicos/Medicos";
+import Consultorios from "./pages/consultorios/Consultorios";
+import Agenda from "./pages/agenda/Agenda";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <TopBar />
+        <div className="container">
+          <Sidebar />
+          <div className="continerPages">
+            <InfoScreen />
+            <NavBar />
+            <Switch>
+              <Route exact path="/">
+                <Inicio />
+              </Route>
+              <Route path="/Pacientes">
+                <Pacientes />
+              </Route>
+              <Route path="/Medicos">
+                <Medicos />
+              </Route>
+              <Route path="/Consultorios">
+                <Consultorios />
+              </Route>
+              <Route path="/Agenda">
+                <Agenda />
+              </Route>
+            </Switch>
+          </div>
+        </div>
+      </Router>
     </div>
   );
 }
